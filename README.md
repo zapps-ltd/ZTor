@@ -155,7 +155,7 @@ ZTor is free software, licensed under the GNU Affero General Public License, ver
 
 ## Third-party software and credits
 
-ZTor stands on the work of others:
+ZTor is built using:
 
 - libtorrent-rasterbar (Arvid Norberg and contributors): the BitTorrent engine. BSD-3-Clause. https://libtorrent.org
 - Boost (used by libtorrent): Boost Software License 1.0. https://www.boost.org
