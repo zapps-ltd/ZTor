@@ -126,15 +126,10 @@ def open_page(folder, page):
 
 def show_about(data_folder=""):
     """The About page for ZTor, written into the cache folder."""
-    import libtorrent as lt
-    import wx
     from . import APP_NAME, __version__, paths
-    sections = [
-        ("What it does", ["An accessible BitTorrent client."]),
-        ("This copy", [["Engine: libtorrent %s" % lt.version,
-                        "Interface: wxPython %s" % wx.version(),
-                        "Data folder: %s" % data_folder]]),
-    ]
+    # No tagline and no engine, interface or folder details: the page starts
+    # with the team, the contact and the credits.
+    sections = []
     credits = [
         "libtorrent (Arvid Norberg and contributors) - BSD 3-Clause License",
         "Boost, used by libtorrent - Boost Software License 1.0",
